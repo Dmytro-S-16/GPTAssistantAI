@@ -12,11 +12,13 @@ public struct RunRetreiveResult: Codable, Equatable {
     public let status: String
     public let requiredAction: RequiredAction?
     public let usage: RunUsage?
+    public let model: String?
 
     enum CodingKeys: String, CodingKey {
         case status
         case requiredAction = "required_action"
         case usage
+        case model
     }
 }
 
